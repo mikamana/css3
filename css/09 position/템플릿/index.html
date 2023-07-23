@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script> 
+    <script src="./js/script.js"></script>
+</head>
+<body>
+        <h1>
+            position
+            <span class="circle circle1">1</span>
+            <span class="circle circle2">2</span>
+            <span class="circle circle3">3</span>
+            <span class="circle circle4">4</span>
+        </h1>
+
+        <p>좌표를 이용해서 특정 위치로 요소를 배치</p>
+        <section class="ex ex1">
+            <h2>absolute</h2>
+            <ul>
+                <li>
+                    abs 포지션이 적용되면 독립적인 위치를 가진다
+                    다른요소와 겹치고, 부모는 높이를 인식할 수 없다.
+                </li>
+                <li>
+                    좌표를 설정할 수 있음 : left, right, top, bottom
+                </li>
+                <li>
+                    absolute의 좌표 기준점은
+                    <em>position속성을 가지고 있는</em> 부모 기준이다.
+                </li>
+            </ul>
+        </section>
+        <section class="ex ex2">
+            <span class="box1">
+                <span>box1</span>
+            </span>
+            <hr>
+            <div class="box2">
+                
+            </div>
+        </section>
+        <hr>
+        <section class="ex3">
+            <h2>fixed속성과 absolute속성의 차이</h2>
+            <ul>
+                <li>absolute는 문서기준, fixed는 브라우저 기준</li>
+                <li>fixed의 좌표는 부모와 상관없음.</li>
+                (!단 부모요소에 transform속성이 적용되면 예외)
+                <li>
+
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="ex4">
+            <h2>relative</h2>
+            <ul>
+                <li>absolute가 적용된 자식요소의 기준으로 설정할때 사용.</li>
+                <li>현재 레이아웃을 그대로 유지하면서 position속성을 적요할 수 있음</li>
+                <li></li>
+            </ul>
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, officia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sint est magni soluta, ipsam doloremque!</p>
+            </div>
+            아주중요한내용 ...<br>
+            아주중요한내용 ...<br>
+            아주중요한내용 ...<br>
+        </section>
+        <section class="ex5">
+
+        </section>
+        <hr>
+<!--     <div class="box1">
+        2131
+    </div> -->
+
+</body>
+</html>

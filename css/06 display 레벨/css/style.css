@@ -1,0 +1,185 @@
+h1{
+    background: red;
+}
+
+
+.ex1{
+    text-align: center; /* text-align은 자식 요소에 상속되는 속성이다.  */
+}
+
+
+.ex1 span{
+    width:100px;
+    display: inline-block;
+    vertical-align:middle; /* 인라인블럭요소에 쓰이는 정렬 속성이다. */
+    background: yellow;
+    
+}
+
+.ex1 span:nth-of-type(1){
+    height:150px;
+    line-height: 150px;
+}
+
+.ex1 span:nth-of-type(2){
+    height:100px;
+    line-height: 100px;
+}
+
+.ex1 span:nth-of-type(3){
+    height:50px;
+    line-height: 50px;
+}
+
+/* ex1 */
+
+.ex2 span{
+    width:100px;
+    display:inline-block;
+    background: yellow;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.ex2 span:nth-of-type(1){
+    height:150px;
+    line-height: 150px;
+}
+.ex2 span:nth-of-type(2){
+    height:100px;
+    line-height: 100px;
+}
+.ex2 span:nth-of-type(3){
+    height:50px;
+    line-height: 50px;
+}
+
+/* ex2 */
+
+
+
+.ex3{
+    display: flex;
+    justify-content: center;
+}
+
+.ex3 p{
+    width:100px;
+    height:100px;
+    background: green;
+}
+/* ex3 */
+
+.ex4{
+    display: flex;
+}
+
+.ex4 p{
+    width:100px;
+    height:100px;
+    background: green;   
+    margin-right: 10px;
+}
+/* ex4 */
+
+.ex5{
+    width:100px;
+    height:100px;
+    background: green;
+}
+/* ex5 */
+
+.ex6{
+    width:100px;
+    height:100px;
+    background: red;
+    margin: 0 auto; /* Y축에는 마진오토가 적용이 되지않는다. */
+    /* margin-left: auto;  오른쪽으로 정렬할때 */
+}
+
+/* ex6 */
+
+.ex7{
+    width:200px;
+    height:200px;
+    background: #ff0000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ex7 span{
+    display: inline-block; /* 첫번째 블록레벨은 마진 탑이 적용이 안돼서 inline-block을 적용했다. */
+    width:100px;
+    height:100px;
+    background: yellow;
+    margin-top: 50px;
+    line-height: 100px;
+}
+
+/* ex7 */
+
+.ex8{
+    width:300px;
+    height:200px;
+    background: red;
+    margin: 0 auto;
+}
+
+.ex8 span{
+    width:100px;
+    height:100px;
+    background: yellow;
+    text-align: center;
+    line-height: 100px;
+}
+
+.ex8 span:nth-child(1){
+    display:block;
+    margin: 0 auto;
+}
+.ex8 span:nth-child(2){
+    display: inline-block;
+}
+.ex8 span:nth-child(3){
+    display: inline-block;
+    margin-left:94px;
+}
+
+
+
+
+/* ex8 */
+
+.ex9{
+    width:300px;
+    height:200px;
+    background: red;
+    margin: 0 auto;
+    text-align: center;
+}
+.ex9 span{
+    width:100px;
+    height:100px;
+    background: yellow;
+    text-align: center;
+    line-height: 100px;
+}
+
+.ex9 span:nth-of-type(1){
+    display: block;
+    margin: 0 auto;
+}
+.ex9 span:nth-of-type(2){
+    display: inline-block;
+}
+.ex9 span:not(:first-child){
+    display: inline-block;
+}
+/* ex9 */
+
+
+
+/* ex10 */
+
+
+

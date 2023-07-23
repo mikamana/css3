@@ -1,0 +1,45 @@
+.container2{
+    width:980px;
+    margin: 30px auto;
+    border: 1px solid #000;
+    background: green;
+    padding-top: 20px;
+
+}
+
+.container2::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.container2 div{
+    width:300px;
+    background: red;
+    margin-bottom: 20px;
+}
+
+.container2 .box{
+    height:300px;
+}
+
+.container2 .box1{
+    height: 620px;
+}
+.container2 .box5{
+    clear:both;
+}
+.container2 div:not(.box4~div){
+    background: blue;
+    float:left;
+    margin-left: 20px;
+}
+
+.container2 .box4 ~ div{
+    float:right;
+    margin-right: 20px;
+}
+.container2 .longbox{
+    height:620px;
+    float:left;
+}

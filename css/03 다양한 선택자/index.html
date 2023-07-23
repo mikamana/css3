@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>다양한 선택자</h1>
+    <section class="ex1">
+        <h2>:not() 가상클래스</h2>
+        <ul>
+            <li>특성요소는 제외하는 선택자</li>
+            <li>
+                <div class="ex1_1">
+                    <b>1</b>
+                    <b>2</b>
+                    <b>3</b>
+                    <b>4</b>
+                    <b>5</b>
+                    <b>6</b>
+                    <b>7</b>
+                    <b>8</b>
+                    <b>9</b>
+                    <b>10</b>
+                </div>
+            </li>
+            <li>주의 : not선택자 안에서 not선택자를 사용할 수 없음 </li>
+        </ul>
+    </section>
+    <hr>
+    <section class="ex2">
+        <h2>속성선택자</h2>
+        <article>
+            <p>.ex2_1 a[href] : href속성을 가지고있는 a요소</p>
+            <p>.ex2_1 a[href=http://] : href속성의 값이 http://와 일치하는 a요소</p>
+            <p>.ex2_1 a[href^='http'] : href속성 값이 http로 시작되는 a요소</p>
+            <p>.ex2_1 a[href$='net'] : href속성 값이 net으로 끝나는 a요소</p>
+            <p>.ex2_1 a[href*='.'] : href속성 값에 .을 포함하는a요소</p>
+            <div class="ex2_1">
+                <a>a#</a>
+                <a href="http://www.naver.com">a#</a>
+                <a href="http://www.google.com">a#</a>
+                <a href="http://www.daum.net">a#</a>
+                <a href="http://">a#</a>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

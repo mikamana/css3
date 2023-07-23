@@ -1,0 +1,31 @@
+body {
+    background-color: #EEE;
+}
+
+.color-red {
+    color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/*컴마 컴비네이션*/
+.box1, .box2 { 
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.box1 > div, /*childrend selector*/
+.box2 > div {
+    width: 160px;
+    height: 150px;
+    background: green;
+} 
+
+.box1 > div > div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

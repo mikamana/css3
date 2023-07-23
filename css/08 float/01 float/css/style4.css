@@ -1,0 +1,36 @@
+.container3{
+    width:980px;
+    background: gray;
+    border: 1px solid pink;
+    margin: 30px auto;
+    padding-top: 20px;
+}
+
+.container3::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container3 div{
+    width:300px;
+    background: green;
+    float:left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container3 .box:nth-child(odd){
+    height:150px;
+    background: blue;
+}
+.container3 .box:nth-child(even){
+    height:300px;
+    background: yellow;
+}
+
+.container3 .box:nth-child(3n + 4){
+    clear: both;
+}
+
+

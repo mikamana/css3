@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>단위와 색상 텍스트관련속성</title>
+</head>
+<body>
+    <main>
+        <h1>unit(단위), color(색상), text properties(텍스트)</h1>
+        <hr>
+        <section class="section1">
+            <h2>글자관련속성</h2>
+            <ul>
+                <li>color: <b>글자색깔</b></li>
+                <li>font-size: <b>10px</b></li>
+                <li>font-family:<b>글꼴</b></li>
+                <li>letter-spacing:<b>자간</b></li>
+                <li>word-spacing: <b>어간</b></li>
+                <li>text-align: <b>글자정렬</b></li>
+                <li>line-height:<b>행간</b></li>
+                <li>font-weight:<b>글자두께</b></li>
+                <li>font-style:<b>글자기울임</b></li>
+                <li>text-decoration:<b>줄</b></li>
+            </ul>
+        </section>
+        <hr>
+        <section class="section2">
+            <h2>unit</h2>
+            <ul>    <!-- 논리적단위(px), 물리적단위(cm,mm,pt) -->
+                <li>px : 화면을 구성하는 논리적 단위의최소 단위</li>
+                <li><span>em </span> : <b>부모크기의 배율</b></li>
+                <li>rem : 16px의 배율</li>
+            </ul>
+        </section>
+        <section class="section3">
+            <h2>색상표기법</h2>
+            
+            <ul>    <!-- 논리적단위(px), 물리적단위(cm,mm,pt) -->
+                <li><h3>고유색상명</h3>
+                    <p>black,red등의 색상명</p></li>
+                <li>
+                    <h3>rgb표기법</h3>
+                    <p>8bit컬러 : Red:0~255, blue:0~255, Green:0~255
+                        rgb예시컬러red: rgb(255,0,0) 
+                        rgb예시컬러blue : rgb(0,255,0) 
+                        rgb예시컬러yellow : rgb(255,255,0) 
+                        rgba(알파채널)투명도표기 : rgba(0,255,0,0.5), rgb(128,128,128)
+                    </p>
+                </li>
+                <li>
+                    <h3>색상번호표기법</h3>
+                    <p>
+                        16진수를 이용한 표기법 : #ffffff
+                        웹표기법 : #F00    <!-- 대문자로 쓰면 같은 자리의 두자리를 묶어서 사용할 수 있다. 추가로 이렇게 표기할 경우 알파채널을 사용하지못한다. -->
+                        
+                        
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

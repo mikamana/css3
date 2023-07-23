@@ -1,0 +1,57 @@
+.ex1 span:last-child{
+    float:right;
+}
+
+.ex2 p:nth-of-type(1) {
+    background-color: yellow;
+    float:left; /* float가 적용되면 float객체 그 자체가 되어버린다. 예를 들어 블럭요소에 float를 주면 요소 자체에 넓이를 가지게된다.*/
+}
+.ex2 p:nth-of-type(2) {
+    background-color: yellow;
+    float:right;
+}
+
+.container1{
+    width:980px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.container1 div{
+    background: red;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left:20px;
+
+}
+.container1 .box{
+    width:300px;
+    float:left;
+    /* 자식요소에 float가 적용되면 부모가 height을 인식못한다. */
+    /* float이 적용되지않은 객체는 float요소와 margin이 적용되지않는다. */
+}
+
+.container1 .box3{
+    clear:both;/* float이 적용되지않은 객체는 float요소와 margin이 적용되지않는다. */
+}
+
+.container1 .box7{
+    float:right;
+    margin-right: 20px;
+}
+
+.container1 .widebox{
+    width:460px;
+    float:left;
+}
+
+.container1::after{ /* 부모요소가 height값을 인식하지못하기 때문에 맨아래에 요소를 추가를 해야하는데, 그 방법을 css에서 가상클래스를 추가해서 요소를 추가하는 방법을 사용했다. 해당 문제를 creafix라고 한다.  */
+    content:"";
+    clear: both; /* clear: both 는 블럭레벨에만 적용된다. */
+    display: block;
+}
+
+
+
+

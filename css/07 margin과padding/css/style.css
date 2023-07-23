@@ -1,0 +1,115 @@
+ul,li,dl{
+    list-style: none;
+    padding:0;
+}
+
+.ex1{
+    width:400px;
+    background: gray;
+    margin: 0 auto;
+}
+
+.ex1 ul{
+    width:100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.ex1 ul li{
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+.ex1 ul li:nth-child(2){
+    margin: 0 auto;
+}
+
+.ex1 ul li:nth-child(3){
+    margin:0 0 0 auto;
+}
+
+/* ex2 */
+
+
+.ex2{
+    width:500px;
+    background: gray;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.ex2>div{
+    background: black;
+}
+
+.ex2>div div{
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+.ex2>div div:nth-child(2){
+    margin:100px 0 0 auto;
+}
+
+/* ex3 */
+
+.ex3 span{
+    display: inline-block;
+    margin: 30px 0;
+    padding: 10px 30px;
+    background: #00f;
+    border: solid 1px gray;
+}
+
+/* ex4 */
+
+.ex4{
+    width:670px;
+    background: black;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.ex4>div:nth-child(1){
+    width:290px;
+    background: red;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.ex4>div:nth-child(2){
+    width:290px;
+    background: red;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.ex4>div>div:nth-child(2){
+    margin-left: auto;
+    margin-top: 30px;
+}
+.ex4>div:nth-child(2){
+    width:290px;
+    background: red;
+    margin-left: auto;
+}
+
+.ex4>div div{
+    width:100px;
+    height:100px;
+    background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

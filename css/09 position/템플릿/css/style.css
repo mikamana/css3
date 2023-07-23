@@ -1,0 +1,107 @@
+h1{
+    width:200px;
+    height:200px;
+    background: orange;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 200px;
+    margin: 30px auto;
+    font-size: 2em;
+    font-weight: normal;
+    color:rgba(255,255,255,.7);
+    text-transform: uppercase;
+    letter-spacing: -0.2em;
+    position: relative;
+}
+
+.circle{
+    width:30px;
+    height:30px;
+    background: orange;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.circle1{
+    left:calc(50% - 15px);
+    top:-15px;
+}
+.circle2{
+    right:-15px;
+    top:calc(50% - 15px);
+}
+.circle3{
+    right:calc(50% - 15px);
+    bottom:-15px;
+}
+.circle4{
+    left:-15px;
+    bottom:calc(50% - 15px);
+}
+
+.box1{
+    width:100px;
+    height:100px;
+    position: fixed;
+    left:calc(50% - 50px); /* calc 쓸 때는 연산자 앞뒤에 띄어쓰기가 있어야함 */
+    /* margin-left: -50px; */
+    /* 포지션 absolute일 경우 display 레벨을 받지않는다. */
+    bottom:0px;
+    background: darkblue;
+}
+
+.box1 span{
+    background: yellow;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+}
+
+.ex{
+    position: relative;
+}
+
+.ex2{
+    height:100px;
+}
+
+
+.box2{
+    width:100px;
+    height:100px;
+    background: red;
+    position:absolute;
+    left:calc(100% - 100px);
+    top:0px;
+}
+/* ex1~3 */
+
+.container{
+    width:300px;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.container p{
+    background: yellow;
+    padding: 20px;
+    position: relative;
+}
+
+.container p::before{
+    content: "-";
+    width:20px;
+    height:20px;
+    display: block;
+    border-radius: 10px;
+    background: red;
+    position: absolute;
+    right:-10px;
+    top:-10px;
+}
+
+
+
+

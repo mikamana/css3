@@ -1,0 +1,16 @@
+.ex1_1 b:nth-child(even):not(:last-child){
+
+    color:red;
+
+}
+
+.ex2_1 a[href]{
+
+    font-style: italic;
+
+}
+
+.ex2_1 a[href='http://']{
+    background-color: red;
+}
+
