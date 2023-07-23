@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS문단연습1</title>
+
+  <style>
+
+    p#contents{
+      width:550px; height:200px; float:left; text-align:center; margin-left:300px; margin-top:100px;   
+    }
+
+    /*
+
+    선택자 지정연습 
+
+    p#contents (O)
+    p #contents (X)
+
+    p#contents span#title (O)
+    span#title (O)
+    #title (O)
+
+    p #title  (O)
+    p#title   (X)
+
+    #contents #title (O)
+    #contents#title (X)
+
+    */
+
+    p#contents span{
+      display:block; text-align:center; /* span 테그를  block 속성값으로 변형하여 영역과 마진 및 문단정렬 적용  */
+    }
+
+
+    span#title{
+      font:normal 12px Verdana, Geneva, sans-serif; letter-spacing:3px;  
+    }
+
+    span#sub_title{
+      font:bold 20px Verdana, Geneva, sans-serif; margin-bottom:20px; 
+    }
+
+    span#text{
+      font:normal 12px/20px "돋움"; color:#666; 
+    }
+      
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+	<p id="contents">
+    	
+        <span id="title"> 2016 LAFUMA CADALOGUE</span>
+        
+        <span id="sub_title">ATHLETIC + TREKKING</span>
+        
+        <span id="text">
+        
+        	도심속 가벼운 애슬레틱에서도, 자연과 함께 즐기는 트레킹에서도, <br />언제 어디서나 라푸마와 함께라면 당신의 모든 액티브한 순간들은 더욱 FRESH 하게 변화한다.
+        
+        </span>   
+      
+    </p>
+
+
+</body>
+</html>

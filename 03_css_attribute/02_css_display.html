@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS display 속성연습</title>
+
+  <style>
+
+
+    body,p{
+      margin:0px; padding:0px;  /* body와 p 테그에 기본마진 없애기 */
+    }
+
+    p.red{
+      width:500px; height:50px; margin-bottom:30px;  background:red; 
+      /* p요소는 기본적으로 영역이 지정되는 block 요소 */
+    }
+        
+    span.green{
+      width:500px; height:50px; margin-bottom:30px; background:green; display:block; 
+      /* span 요소는 기본적으로 영역이 지정되지 않는 inline 요소  ( display 속성을 block 으로 바꿈 )*/
+    }
+      
+      
+    img.test_img{
+
+      padding:30px;
+      background:url(./images/learn-css.png);
+      display:block; margin-bottom:30px; 
+      /* img 요소는 기본적으로 영역이 지정되지 않는 inline 요소  ( display 속성을 block 으로 바꿈 )*/
+    }	
+
+
+</style>
+
+
+</head>
+
+<body>
+	
+	<p class="red"> p요소는 기본적으로 영역이 지정되는 block 요소입니다. </p>
+	
+	<p class="red"> p요소는 기본적으로 영역이 지정되는 block 요소입니다. </p>
+	
+  <span class="green"> span 요소는 기본적으로 인라인요소 입니다.</span>
+  
+  <span class="green"> span 요소는 기본적으로 인라인요소 입니다.</span>
+  
+  <img class="test_img" src="images/woman.jpg" alt="이미지설명">
+  
+  <img class="test_img" src="images/man.jpg" alt="이미지설명">
+
+
+</body>
+</html>

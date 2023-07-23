@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여러가지 CSS스타일의 선택자</title>
+
+  <style>
+
+  *{
+    color:red;  /* html모든요소를 선택*/
+  }
+
+  p{
+    color:blue; /* 특정요소를 선택 */
+  }
+
+  p span{
+    color:green; /* p요소안에 있는 span 요소를 선택 */
+  }
+
+  span{
+    color:yellow /* !important */
+    /* span요소에 적용되지 않음 (선택자를 구체적으로 지정된요소가 우선순위로 적용 ) > 값뒤 !important 적용하면 최우선순위적용*/
+  }
+
+  p,span{
+    color:pink  /* 두개이상의 요소에 동시에 지정할때 */
+  }
+
+  /* 그외 선택자 별도예제설명    >, +, ~   */
+
+  </style>
+
+
+</head>
+
+<body>
+  
+  <p>CSS스타일의 기본서식은 <span>선택자와 속성 그리고 값</span>으로 이루어집니다.</p>
+
+	
+
+</body>
+</html>

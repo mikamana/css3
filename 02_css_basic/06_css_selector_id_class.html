@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>id와 class선택자</title>
+
+  <style>
+
+    p#red{
+      color:red;
+    }
+
+    p#blue{
+      color:blue;
+    }
+
+    p.green{
+      color:green;
+    }
+
+
+    p#size20{
+      font-size:20px; 
+    }
+    p#size30{
+      font-size:30px; 
+    }
+
+    p.size20{
+      font-size:20px;   
+    }
+
+
+    p.size30{
+      font-size:30px;   
+    }
+
+    /* 클래스는 같은이름으로 여러개 사용하여 한번에 속성 적용,  아이디는 한페이지내에서 같은 아이디를 한개만 사용가능하며, 그 요소에만 속성적용   */
+
+  </style>
+
+
+
+</head>
+
+<body>
+
+
+	<p id="red"> 색상이 빨강 문단입니다. </p>
+    
+  <p id="blue"> 색상이 파랑 문단입니다.</p>    
+    
+    
+  <p class="green"> 색상이 녹색 문단입니다. </p>
+    
+  <p class="green"> 색상이 녹색 문단입니다. </p>
+  
+  
+  <p class="green" id="size20"> 색상이 녹색이고 사이즈 20 인 문단입니다. </p> <!-- 단독속성은 아이디로 지정하고 공통속성을 클래스로 지정하여 아이디와 클래스를 동시에 사용 -->
+  
+  <p class="green" id="size30"> 색상이 녹색이고 사이즈 30 인 문단입니다. </p>
+  
+  
+  <p class="green size20" >색상이 녹색이고 사이즈가 20 인 문단입니다.</p> <!-- 중복 클래스를 사용하여 공통속성 여러개를 구분하여 동시에 적용할수있다 -->
+  
+  <p class="green size30" >색상이 녹색이고 사이즈가 30 인 문단입니다. </p>  
+
+  <!-- 자주쓰이는 속성을 클래스로 여러개로 미리 지정해놓고 요소를 입력할때 해당되는 클래스명을 중복으로 지정하여 동시에 여러개의 속성을 구분하여 적용하면 코드의 효율성을 높일수 있다. -->
+
+</body>
+</html>
