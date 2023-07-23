@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+		<title>TransitionMenu</title>
+		<style>		
+
+			ul,li{
+				margin:0px;
+				padding:0px;
+				list-style:none;
+			}
+			nav#menu{
+				width:200px;
+				position:absolute; left:50%; margin-left:-100px; top:200px;
+				background:#eeeeee; box-shadow:5px 5px 5px rgb(70, 70, 70); border-radius:0px 32px 32px 0px; padding:30px 10px; 
+			}
+			ul#menu_list li{
+				width:200px;
+				height:64px;
+				border-radius:0px 32px 32px 0px;
+				background:url("images/icons.png") no-repeat right top;
+				font:normal 12px/64px "verdana"; color:rgb(78, 78, 78);
+				text-indent:30px;				
+				transition: .3s ease;
+				-moz-transition: .3s ease;
+				-webkit-transition: .3s ease;
+				-ms-transition: .3s ease;
+				-o-transition: .3s ease;		
+			}
+			ul#menu_list li:nth-child(1){
+				background-position: right 0px;
+			}
+			ul#menu_list li:nth-child(2){
+				background-position: right -64px;
+			}	
+			ul#menu_list li:nth-child(3){
+				background-position: right -128px;
+			}	
+			ul#menu_list li:nth-child(4){
+				background-position: right -192px;
+			}
+			
+			ul#menu_list li:hover{
+				width:250px;
+				font-size:16px; color:#FFFFFF;				
+				box-shadow: 2px 2px 2px #000;
+				text-shadow: 1px 1px 1px rgb(75, 75, 75);
+			}
+
+			ul#menu_list li:nth-child(1):hover {
+				background-color:#ff3399;
+			}
+			ul#menu_list li:nth-child(2):hover {
+				background-color:#59c9ff;
+			}
+			ul#menu_list li:nth-child(3):hover {
+				background-color:#85e21b;
+			}
+			ul#menu_list li:nth-child(4):hover {
+				background-color: #fdc244;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="menu">
+			<ul id="menu_list">   
+				<li> Facebook </li>
+				<li> Tweeter </li>
+				<li> Instagram</li>
+				<li> Pinterest</li>    
+			</ul>
+		</nav>
+	</body>
+</html>

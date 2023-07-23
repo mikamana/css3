@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+		<title>galleryimg</title>
+		<style>
+
+			body{		
+				background: #eeeeee; 
+			}
+			ul,li{
+				margin:0px;
+				padding:0px;
+				list-style:none;
+			}
+
+			ul#gallery_list{
+				width:910px; height:330px;  margin:200px auto; 
+				
+			}
+			ul#gallery_list li {
+				width:250px; height:125px; 
+				float:left;
+				margin-right:80px; 
+				margin-bottom:80px;				
+				border:solid 3px white;
+				box-shadow:5px 5px 5px gray;
+				box-sizing:border-box; 
+				overflow:hidden; 
+					
+				transition:0.2s ease-out;
+				-webkit-transition:0.2s ease-out;
+				-moz-transition:0.2s ease-out;
+				-ms-transition:0.2s ease-out;
+				-o-transition:0.2s ease-out;			
+					
+			}
+
+			ul#gallery_list li:nth-child(3n){
+				margin-right:0px; 
+			}
+
+			ul#gallery_list li:hover{
+				transform:scale(1.2,1.2);	
+				-webkit-transform:scale(1.2,1.2);
+				-moz-transform:scale(1.2,1.2);
+				-ms-transform:scale(1.2,1.2);
+				-o-transform:scale(1.2,1.2);				
+			}
+			ul#imglist li img{
+				display:block;    /* 이미지아래여백제거 - 오버효과를 li에 주지않고 img 에주면 설정안해도된다.    */
+			}
+			
+		</style>
+	</head>
+<body>
+
+ <ul id="gallery_list">
+ 	  <li><img src="images/img01.jpg" alt="이미지설명"></li>
+ 	  <li><img src="images/img02.jpg" alt="이미지설명"></li>
+ 	  <li><img src="images/img03.jpg" alt="이미지설명"></li>
+ 	  <li><img src="images/img04.jpg" alt="이미지설명"></li>
+ 	  <li><img src="images/img01.jpg" alt="이미지설명"></li>
+ 	  <li><img src="images/img02.jpg" alt="이미지설명"></li>   
+ </ul>
+
+</body>
+</html>

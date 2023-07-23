@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>animation 연습1</title>
+  <style>
+
+    @-webkit-keyframes box_ani{
+        0%{
+            left:0px;
+        }
+        50%{
+            top:500px;
+            -webkit-transform:scale(3,3);
+            background-color: green;
+    
+        } 100%{
+            left:1800px;
+        }
+    }
+    @-ms-keyframes box_ani{
+        0%{
+            left:0px;
+        } 100%{
+            left:1800px;
+        }
+    }
+
+    div#box{
+        width:100px;
+        height:100px;
+        background-color: yellow;
+        position:absolute;
+        left:0px;
+        top:0px;
+        -webkit-animation:box_ani 3s ease-out infinite;
+    }
+   
+
+
+
+  </style>
+</head>
+<body><div id="box">
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+		<title>aquabutton</title>
+		<style>
+			div#button{
+				width:200px;
+				height:50px;
+				position:absolute; left:50%; margin-left:-100px; top:300px;
+				border:solid 1px #eeeeee; border-radius:25px;
+				background:#b3dced;
+				background: -moz-linear-gradient(top,  #b3dced 0%, #29b8e5 50%, #bce0ee 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3dced), color-stop(50%,#29b8e5), color-stop(100%,#bce0ee));
+				background: -webkit-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+				background: -o-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+				background: -ms-linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+				background: linear-gradient(top,  #b3dced 0%,#29b8e5 50%,#bce0ee 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 );
+				box-shadow:2px 2px 10px #b6b5b5;	
+			}
+			div#light{
+				width:180px;
+				height:30px;
+				position:absolute; left:50%; margin-left:-90px; 
+				border-radius:15px;
+				background: -moz-linear-gradient(top,  rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0)));
+				background: -webkit-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+				background: -o-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+				background: -ms-linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+				background: linear-gradient(top,  rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+				
+			}
+			div#text{
+				width:200px;
+				position:absolute; left:50%; margin-left:-100px; top:0px; text-align:center; 
+				font:normal 18px/50px Arial, Helvetica, sans-serif; color:#FFFFFF;
+				text-shadow:1px 1px 1px rgb(116, 116, 116);
+			}
+			div#button:hover{
+				background: #b4e391;
+				background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4e391), color-stop(50%,#61c419), color-stop(100%,#b4e391));
+				background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+				background: -o-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+				background: -ms-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+				background: linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
+			}	
+		</style>
+	</head>
+	<body>
+		<div id="button">
+			<div id="light">    
+				</div>
+				<div id="text">
+				 BUTTON
+				</div>
+		</div>
+	</body>
+</html>

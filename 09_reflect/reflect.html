@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
+		<title>reflect</title>
+
+		<style>			
+			body{			
+				background:#464646;
+			}
+			div#car{
+				width:400px; height:295px; 
+				position:absolute; left:50%; margin-left:-200px; top:50%; margin-top:-147px; 	
+			}
+			div#car img{
+				-webkit-box-reflect: below 5px -webkit-linear-gradient(bottom,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 35%) 
+			}	
+		</style>
+	</head>
+	<body>
+		<div id="car">
+			<img src="images/car.png" alt="이미지">
+		</div>
+	</body>
+	</html>

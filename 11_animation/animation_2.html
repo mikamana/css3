@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title> animation </title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+		
+		<style>	
+
+      @-webkit-keyframes golf_ani{
+        0%{
+          top:100px; opacity:0
+        }
+        100%{
+          top:0px; opacity:1
+        }
+      }
+
+
+      @-webkit-keyframes circle_ani{
+        0%{
+          transform:scale(0,0)
+        }
+        50%{
+
+        }
+        100%{
+          transform:scale(1,1)
+        }
+      }
+
+      @-webkit-keyframes text_ani{
+        0%{
+          top:250px; opacity:0;
+        }
+        50%{
+          top:250px; opacity:0;
+        }
+        100%{
+          top:200px; opacity:1; 
+        }
+      }
+
+			
+      div#wrap{
+        width:1200px; height:500px; position:absolute; left:50%; margin-left:-600px; top:50%; margin-top:-250px; 
+      }
+
+      section#text{
+        width:500px; height:200px; position:absolute; left:150px; top:200px; 
+        font:normal 50px "Oswald";
+        animation:text_ani 2s ease-out 1
+      }
+
+      section#golf{
+        width:200px; height:627px; position:absolute; left:750px; bottom:0px; 
+      }
+      section#golf::before{
+        content:"";
+        width:400px; height:400px; position:absolute; left:50%; margin-left:-200px; background:#EFF0E5; top:200px;
+        border-radius:200px;
+        animation:circle_ani 1s ease-out 1;         
+      }
+
+      section#golf img{
+        position:absolute; left:0px; top:0px; 
+        animation:golf_ani 0.5s ease-out 1; 
+      }
+
+      
+
+
+		</style>
+
+	</head>
+
+	<body>
+		
+    <div id="wrap">
+
+      <section id="text">
+        JOIN THE<br>
+        NINE-CLUB, CLUB.
+      </section>
+
+      <section id="golf">
+        <img src="images/golf.png" alt="이미지설명">
+      </section>     
+
+    </div>
+    
+
+
+	</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>before_after 연습3</title>
+  <style> *{
+    margin:0px;
+    padding:0px;
+  }
+       
+    p#title{
+        width:500px;
+        height:100px;
+        margin:300px auto;
+        position:relative;
+        left:0px;
+        top:0px;
+        text-align: center;
+        font:normal 50px/100px 'verdana';
+    }
+
+    p#title::before{
+        content:"";
+        width:500px;
+        height:50px;
+        display:block;
+        border:solid 5px black;
+        box-sizing:border-box;
+        border-bottom: none;
+        position:absolute;
+        left:0px;
+        top:0px;
+    }
+
+    p#title::after{
+        content:"";
+        width:500px;
+        height:50px;
+        display:block;
+        border:solid 5px rgb(226, 225, 225);
+        box-sizing:border-box;
+        border-top: none;
+        position:absolute;
+        left:0px;
+        bottom:0px;
+    }
+
+
+    
+   
+
+
+
+  </style>
+</head>
+<body> <p id="title"> ABOUT ME</p>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

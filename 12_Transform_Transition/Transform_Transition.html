@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+		<title>Transform_Transition</title>
+		<style>
+			div#box{
+				width:100px;
+				height:100px;
+				background:#99CC00;
+				position:absolute; left:50%; margin-left:-50px; top:300px;	
+				transition:0.5s ease;
+				-webkit-transition:0.5s ease;
+				-moz-transition:0.5s ease;
+				-ms-transition:0.5s ease;
+				-o-transition:0.5s ease;	
+			}
+			div#box:hover{
+				transform:scale(1.5,1.5) rotate(360deg);
+				-webkit-transform:scale(1.5,1.5) rotate(360deg);
+				-moz-transform:scale(1.5,1.5) rotate(360deg);
+				-ms-transform:scale(1.5,1.5) rotate(360deg);
+				-o-transform:scale(1.5,1.5) rotate(360deg);	
+			}
+
+		</style>
+
+	</head>
+<body>
+	
+	<div id="box">
+
+	</div>
+</body>
+</html>

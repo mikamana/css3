@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>before_after선택자연습1</title>		
+		
+		<style>				
+			
+      p#text{
+        width:500px; height:30px; position:absolute; left:500px; top:300px; text-align:center; 
+      }
+      p#text::before{
+        content:"앞추가내용";        
+        background:red; 
+        color:white;
+        padding:5px; 
+        border-radius:5px; 
+        margin-right:20px; 
+      }
+      p#text::after{
+        content:"뒤추가내용";
+        background:blue;
+        color:white;
+        padding:5px;
+        border-radius:5px;
+        margin-left:20px;  
+      }
+      /* ::before, ::after 선택자로 추가된 컨텐츠는 기본적으로 inline 요소
+      영역을 지정할려면 display:block 요소로 바꿔줌 */
+			
+		</style>
+		
+	</head>
+
+	<body>	
+		
+		<p id="text">해당요소</p>
+		
+	</body>
+</html>

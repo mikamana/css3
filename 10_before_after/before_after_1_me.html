@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>before_after 연습</title>
+  <style>
+
+    *{
+    margin:0px;
+    padding:0px;
+    }
+
+    p#text{
+        width:500px;
+        height:30px;
+        margin:200px auto;
+    }
+
+    p#text::before{
+        content:"이전요소";
+        background-color: blue;
+        margin-right:20px;
+    }
+
+    p#text::after{
+        content:"다음요소";
+        background:green;
+        margin-left:20px;
+    }
+   
+
+
+
+  </style>
+</head>
+<body>
+    <p id="text">해당요소</p>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

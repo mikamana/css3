@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<title>animation</title>
+		
+		<style>			
+			
+			@-webkit-keyframes box_ani{
+							0% {
+								left:0px; top:0px; opacity:0;
+							}
+							
+							50% {
+								top:500px; transform:scale(3,3); opacity:1;
+							}
+							
+							100% {
+								left:1800px; top:0px; opacity:0; 
+							}
+			}	
+			div#box{
+				width:100px;
+				height:100px;
+				position:absolute; top:0px; left:0px;
+				background:#61ca0a;
+				-webkit-animation:box_ani 3s ease-out infinite;
+			}
+
+
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div id="box">
+
+		</div>
+
+	</body>
+</html>

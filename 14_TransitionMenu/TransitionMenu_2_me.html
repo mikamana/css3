@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>Transition연습2
+  </title>
+  <style>
+     
+     *{
+      margin:0px;
+      padding:0px;
+     }
+
+
+
+     p#title{
+      width:1200px;
+      height:50px;
+      margin:200px auto;
+      text-align: center;
+      font:normal 50px/50px "verdana";
+      position:relative;
+      left:0px;
+      top:0px;
+      
+     }
+
+
+     p#title::before{
+      content:"";
+      width:0px;
+      height:5px;
+      background: black;
+      display:block;
+      position:absolute;
+      left:0px;
+      top:22px;
+      transition:0.3s ease-out;
+       }
+     p#title::after{
+      content:"";
+      width:0px;
+      height:5px;
+      background: black;
+      display:block;
+      position:absolute;
+      right:0px;
+      top:22px;
+      transition:0.3s ease-out;
+       }
+    
+   p#title:hover::before{
+       width:400px;
+   }
+   p#title:hover::after{
+       width:400px;
+   }
+
+
+
+
+
+  </style>
+</head>
+<body> 
+
+   <p id="title"> About me </p>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

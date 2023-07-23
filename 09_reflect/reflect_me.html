@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>reflect 연습</title>
+  <style>
+   *{
+    margin:0px;
+    padding:0px;
+   }
+
+   body{
+    background:gray;
+   }
+
+   p#car{
+    width:400px;
+    height:287px;
+    position:absolute;
+    left:50%;
+    margin-left:-200px;
+    top:50%;
+    margin-top:-143px;
+   }
+
+   p#car img{
+    -webkit-box-reflect:below 20px -webkit-linear-gradient(bottom, rgba(255,255,255,0.3)0%, rgba(255,255,255,0)50%); 
+    -moz-box-reflect:below 20px -moz-linear-gradient(bottom, rgba(255,255,255,0.3)0%, rgba(255,255,255,0)50%); 
+    -ms-box-reflect:below 20px -ms-linear-gradient(bottom, rgba(255,255,255,0.3)0%, rgba(255,255,255,0)50%); 
+    -o-box-reflect:below 20px -o-linear-gradient(bottom, rgba(255,255,255,0.3)0%, rgba(255,255,255,0)50%); 
+   }
+
+
+
+  </style>
+</head>
+<body>
+
+
+    <p id="car">
+        <img src="./images/car.png" alt="이미지설명">
+    </p>
+
+
+
+</body>
+</html>

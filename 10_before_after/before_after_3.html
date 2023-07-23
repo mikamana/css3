@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<title>before_after선택자연습3</title>	
+		<style>
+			p#title{
+        width:500px; height:100px; position:absolute; left:50%; margin-left:-250px; top:300px;
+        text-align:center; 
+        font:normal 50px/100px "verdana";         
+      }
+      p#title::before{
+        content:"";
+        width:500px; height:50px; display:block;
+        position:absolute; left:0px; top:0px; 
+        border:solid 5px black; border-bottom:none;
+      }
+      p#title::after{
+        content:"";
+        width:500px; height:50px; display:block;
+        position:absolute; left:0px; bottom:0px; 
+        border:solid 5px #cccccc; border-top:none;
+      }
+      
+			
+			
+		</style>		
+		
+	</head>
+
+	<body>		
+		
+		<p id="title">About me</p>
+		
+	</body>
+</html>

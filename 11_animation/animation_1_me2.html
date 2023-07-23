@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>animation 연습2</title>
+  <style>
+
+    @keyframes box_me{
+        0%{
+            left:300px;
+        } 50%{ 
+            left:600px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;
+        }
+        100%{
+            left:300px;
+            top:800px;
+            background-color: red;
+            
+        }
+    }
+    @keyframes box_me2{
+        0%{
+            left:600px;
+        } 50%{ 
+            left:300px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;
+        }100%{
+            left:600px;
+            top:800px;
+            background-color: red;
+        }
+    }
+    @keyframes box_me3{
+        0%{
+            left:900px;
+        } 50%{ 
+            left:1200px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;
+        }
+        100%{
+            left:900px;
+            top:800px;
+            background-color: red;
+        }
+    }
+    @keyframes box_me4{
+        0%{
+            left:1200px;
+        } 50%{ 
+            left:900px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;
+        }
+        100%{
+            left:1200px;
+            top:800px;
+            background-color: red;
+        }
+    }
+    @keyframes box_me5{
+        0%{
+            left:300px;
+        } 50%{ 
+            left:600px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;}
+
+        100%{
+            left:300px;
+            top:0px;
+            background-color: red;
+        }
+    }
+    @keyframes box_me6{
+        0%{
+            left:600px;
+        } 50%{ 
+            left:300px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;}
+
+        100%{
+            left:600px;
+            top:0px;
+            background-color: red;
+        }
+    }
+    @keyframes box_me7{
+        0%{
+            left:900px;
+        } 50%{ 
+            left:600px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;}
+
+        100%{
+            left:900px;
+            top:0px;
+            background-color: red;
+        }
+    }
+    @keyframes box_me8{
+        0%{
+            left:1200px;
+        } 50%{ 
+            left:900px;
+            top:200px;
+        } 75%{
+            left:600px;
+            top:500px;}
+
+        100%{
+            left:1200px;
+            top:0px;
+            background-color: red;
+        }
+    }
+
+
+
+    div#box{
+        width:50px;
+        height:50px;
+        background-color:rgb(5, 5, 5);
+        position:absolute;
+        left:300px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me 3s ease-out infinite;
+
+    }
+    div#box2{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:600px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me2 3s ease-out infinite;
+    }
+    div#box3{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:900px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me3 3s ease-out infinite;
+    }
+   
+    div#box4{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:1200px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me4 3s ease-out infinite;
+    }
+    div#box5{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:300px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me5 3s ease-out infinite;
+    }
+    div#box6{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:600px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me6 3s ease-out infinite;
+    }
+    div#box7{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:900px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me7 3s ease-out infinite;
+    }
+    div#box8{
+        width:50px;
+        height:50px;
+        background-color:rgb(45, 49, 49);
+        position:absolute;
+        left:1200px;
+        top:0px;
+        border-radius: 50px;
+        -webkit-animation:box_me8 3s ease-out infinite;
+    }
+   
+
+
+
+  </style>
+</head>
+<body> <div id="box">
+
+</div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+<div id="box5"></div>
+<div id="box6"></div>
+<div id="box7"></div>
+<div id="box8"></div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

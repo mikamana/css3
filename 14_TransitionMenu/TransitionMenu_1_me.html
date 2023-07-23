@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>TransitionMenu연습</title>
+  <style>
+
+ *{
+   margin:0px;
+   padding:0px;
+ }
+
+ ul,li{
+   list-style:none;
+ }
+
+ nav#menu{
+   width:200px;
+   height:auto;
+   position:absolute;
+   left:300px;
+   top:200px;
+   background: #eeeeee;
+   box-shadow: 5px 5px 5px rgb(105, 105, 105);
+   border-radius: 0px 32px 32px 0px;
+   padding:10px;
+ }
+
+ ul#mainmenu_list{
+   width:100%;
+   height:100%;
+ }
+
+ ul#mainmenu_list>li{
+    width:200px;
+    height:64px;
+    border-radius:0px 32px 32px 0px;
+    font:normal 14px/64px "verdana";
+    text-indent: 20px;
+    background:url('./images/icons.png') no-repeat right 0px;
+    transition:0.3s ease-out;
+
+    
+ }
+ ul#mainmenu_list>li:nth-child(1){
+   background-position:right 0px;
+ }
+ ul#mainmenu_list>li:nth-child(2){
+   background-position:right -64px;
+ }
+ ul#mainmenu_list>li:nth-child(3){
+   background-position:right -128px;
+ }
+ ul#mainmenu_list>li:nth-child(4){
+   background-position:right -192px;
+ }
+
+ ul#mainmenu_list>li:hover{
+   width:250px;
+   font-size: 18px;
+   color:white;
+   text-shadow: 1px 1px 1px gray;
+   box-shadow: 3px 3px 3px rgb(95, 95, 95);
+ }
+
+ ul#mainmenu_list>li:nth-child(1):hover{
+   background-color: red;
+ }
+ ul#mainmenu_list>li:nth-child(2):hover{
+   background-color: rgb(137, 23, 182);
+ }
+ ul#mainmenu_list>li:nth-child(3):hover{
+   background-color: rgb(18, 145, 92);
+ }
+ ul#mainmenu_list>li:nth-child(4):hover{
+   background-color: rgb(31, 4, 14);
+ }
+
+
+
+
+ ul#mainmenu_list>li::after{
+   content:""
+   img url(./images/icons.png)
+ }
+
+
+
+    
+   
+
+
+
+  </style>
+
+</head>
+
+<body> 
+
+  <nav id="menu">
+
+   <ul id="mainmenu_list">
+      <li>Facebook</li>
+      <li>Tweeter</li>
+      <li>Instagram</li>
+      <li>Pinterest</li>
+   </ul>
+
+  </nav>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

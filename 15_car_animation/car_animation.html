@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	
+		<title>car_animation</title>
+		
+		<style>
+
+			body{
+				margin:0px;
+			}			
+			ul,li{
+				margin:0px;
+				padding:0px;
+				list-style:none;
+			}
+			div#wrap{
+				width:892px; height:589px; 
+				position:absolute; left:50%; margin-left:-446px; top:50%; margin-top:-350px; 
+			}
+			div#floor{
+				width:892px; height:180px; 
+				position:absolute; left:0px; top:410px;
+				background:url("images/floor.jpg") no-repeat; 
+			}
+			div#car{
+				width:419px; height:246px; 
+				position:absolute; left:247px; top:279px; 				
+				-webkit-animation:car_ani 0.8s ease-out 1;
+			}
+			div#logo{
+				width:145px; height:47px; 
+				position:absolute; left:102px; top:0px; 
+				-webkit-animation:logo_ani 1s ease-out 1;
+				/*-webkit-animation-delay:3s;*/	
+			}
+			nav#menu{
+				width:145px; height:122px;
+				position:absolute; left:102px; top:70px; 	
+				-webkit-animation:menu_ani 2.5s ease-out 1;
+			}
+			@-webkit-keyframes car_ani{
+				0%{
+					opacity:0;
+					top:350px; 
+				}
+				70%{
+					top:260px; 
+				}
+				100%{
+					opacity:1;
+					top:279px; 
+				}
+			}	
+			@-webkit-keyframes logo_ani{
+				0%{
+					opacity:0;
+					top:-50px; 
+				}
+
+				50%{
+					opacity:0;
+					top:-50px; 
+				}
+				100%{
+					opacity:1;
+					top:0px; 
+				}
+			}
+			@-webkit-keyframes menu_ani{
+				0%{
+					opacity:0;					
+				}	
+
+				50%{
+					opacity:0;					
+				}
+
+				100%{
+					opacity:1;
+				 
+				}
+			}
+			ul#menu_list li{
+				width:145px; height:22px; 
+				text-indent:-99999px;
+				background:url("images/menu.jpg") no-repeat -145px 0px;
+				margin-bottom:11px;
+				
+				transition: .2s ease;
+				-moz-transition: .2s ease;
+				-webkit-transition: .2s ease;
+				-ms-transition: .2s ease;
+				-o-transition: .2s ease;
+			}
+			ul#menu_list li:nth-child(1) {
+				background-position:-145px 0;
+			}
+			ul#menu_list li:nth-child(2){
+				background-position:-145px -33px;
+			}
+			ul#menu_list li:nth-child(3) {
+				background-position:-145px -66px;
+			}
+			ul#menu_list li:nth-child(4) {
+				background-position:-145px -99px;
+			}
+			
+				/*hover*/
+			ul#menu_list li:nth-child(1):hover {
+				background-position: 0 0;
+			}
+			ul#menu_list li:nth-child(2):hover  {
+				background-position:0 -33px;
+			}
+			ul#menu_list li:nth-child(3):hover  {
+				background-position:0 -66px;
+			}
+			ul#menu_list li:nth-child(4):hover  {
+				background-position:0 -99px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="floor">
+					
+			</div>
+			<div id="car">
+					<img src="images/car.png" alt="자동차">
+			</div>
+			<div id="logo">
+					<img src="images/logo.jpg"  alt="로고">    
+			</div>    
+			<nav id="menu">
+				<ul id="menu_list">
+					<li>Exterior</li>
+					<li>Interior</li>
+					<li>Gallery</li>
+					<li>Community</li>				
+				</ul>    
+			</nav>
+		</div>
+	</body>
+</html>

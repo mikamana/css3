@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+  <title>gallery연습</title>
+  <style>
+
+
+    *{
+      margin:0px;
+      padding:0px;
+    }
+    
+    body{
+      background-color: rgb(209, 209, 209);
+    }
+    ul,li{
+      list-style:none;
+    }
+
+
+    section#gallery{
+      width:1000px;
+      height:350px;
+      margin:200px auto;
+
+    }
+   
+   ul#gallery_list{
+      width:100%;
+      height:100%;
+   }
+
+   ul#gallery_list>li{
+      width:250px;
+      height:125px;
+      float:left;
+      margin-right:125px;
+      margin-bottom:50px;
+      border:solid 3px white;
+      box-sizing: border-box;
+      overflow:hidden; 
+      transition:0.2s ease-out;
+      
+   }
+
+   ul#gallery_list>li:nth-child(3n){
+      margin-right:0px;
+   }
+
+   ul#gallery_list li:hover{
+      transform:scale(1.2,1.2);
+      box-shadow:5px 5px 5px rgb(71, 71, 71);
+   }
+   
+   
+   
+
+  </style>
+</head>
+<body> <section id="gallery">
+<ul id="gallery_list">
+   <li><img src="./images/img01.jpg" alt="이미지설명"></li>
+   <li><img src="./images/img02.jpg" alt="이미지설명"></li>
+   <li><img src="./images/img03.jpg" alt="이미지설명"></li>
+   <li><img src="./images/img04.jpg" alt="이미지설명"></li>
+   <li><img src="./images/img01.jpg" alt="이미지설명"></li>
+   <li><img src="./images/img02.jpg" alt="이미지설명"></li>
+</ul>
+</section>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

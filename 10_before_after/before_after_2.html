@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>	
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>before_after선택자연습2</title>		
+		<style>
+			
+			p#title{
+				width:1200px; height:50px; margin:300px auto; text-align:center;
+				font:bold 50px "돋움"; position:relative; left:0px; top:0px; 
+			}			
+			
+			p#title::before{
+				content:"";				
+				width:400px;
+				display:block; 
+				border-top:solid 5px black;
+				position:absolute; left:0px; top:30px; 			
+			}
+			
+			p#title::after{
+				content:"";				
+				width:400px;
+				display:block; 
+				border-top:solid 5px black;
+				position:absolute; right:0px; top:30px; 		
+			}			
+			
+		</style>	
+		
+	</head>
+
+	<body>		
+		
+		<p id="title">About me</p>
+		
+	</body>
+</html>
